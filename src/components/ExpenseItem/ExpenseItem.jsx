@@ -1,20 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Card from './Card';
 import { ExpenseDate, ExpenseDescription, ExpenseItemBar, ExpenseAmount } from './ExpenseItemStyles';
 
 const ExpenseItem = (props) => {
-    const [title , setTitle] = useState(props.title);
-
-    const expenseAmount = 12;
-
-    let today = new Date();
-    today = today.toDateString();
-
-    const clickEvent = () => {
-        console.log("hihihi");
-        setTitle('Owl Owls');
-    }
-
     return (
         <Card>
             <ExpenseItemBar>
@@ -29,7 +17,7 @@ const ExpenseItem = (props) => {
                 <ExpenseAmount>
                     <h2> {props.items.amount} </h2>
                 </ExpenseAmount>
-                <button onClick={clickEvent}>Change title</button>
+                {/* <button>Change title</button> */}
             </ExpenseItemBar>
         </Card>
 
