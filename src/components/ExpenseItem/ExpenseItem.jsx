@@ -17,7 +17,6 @@ const ExpenseItem = (props) => {
                 <ExpenseAmount>
                     <h2> {props.items.amount} </h2>
                 </ExpenseAmount>
-                {/* <button>Change title</button> */}
             </ExpenseItemBar>
         </Card>
 

@@ -32,3 +32,12 @@ button,
   opacity: 0.7;
   transition: 0.2s ease;
 }
+
+.no-expenses {
+  background-color: black;
+  margin: 3rem 10vw;
+  border-radius: 2rem;
+  height: 70vh;
+  display: grid;
+  align-items: center;
+}
