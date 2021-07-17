@@ -1,28 +1,18 @@
-import React from 'react'
-import ExpenseItem from '../ExpenseItem/ExpenseItem'
-
-
+import React from "react";
+import ExpenseItem from "../ExpenseItem/ExpenseItem";
 
 const Expenses = (props) => {
-
   // component for when 'props.items' are not null
   const ExpenseItemDisplay = () => {
-    console.log(props);
+    // console.log(props);
     return (
       <div>
-        {
-          props.items.map(item => {
-            return (
-              <ExpenseItem
-                key={item.id}
-                items={item}
-              />
-            )
-          })
-        }
-      </div >
+        {props.items.map((item) => {
+          return <ExpenseItem key={item.id} items={item} />;
+        })}
+      </div>
     );
-  }
+  };
 
   // component for when 'props.items' are null
   const NoExpenses = () => {
@@ -31,14 +21,8 @@ const Expenses = (props) => {
         <h2>No expenses added yet</h2>
       </div>
     );
-  }
+  };
 
-
-  return (
-    <div>
-      {!(props.items) ? <NoExpenses /> : <ExpenseItemDisplay />}
-    </div >
-  );
-
-}
+  return <div>{!props.items ? <NoExpenses /> : <ExpenseItemDisplay />}</div>;
+};
 export default Expenses;

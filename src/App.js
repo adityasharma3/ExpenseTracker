@@ -2,31 +2,12 @@ import { AppMain } from './components/ExpenseItem/ExpenseItemStyles';
 import React, { useState } from 'react';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
-
-// const DUMMY_EXPENSES = [
-//   {
-//     id: 'e1',
-//     title: 'Toilet Paper',
-//     amount: 90.12,
-//     date: new Date(2021, 7, 7)
-//   },
-//   {
-//     id: 'e2',
-//     title: 'Car Insurance',
-//     amount: 1000,
-//     date: new Date(2021, 7, 16)
-//   },
-//   {
-//     id: 'e3',
-//     title: 'Moanaco',
-//     amount: 2.12,
-//     date: new Date(2021, 5, 12)
-//   }
-// ]
+import Footer from './components/Footer/Footer';
 
 function App() {
 
   const [expenses, setExpenses] = useState('');
+  const [currentExp, setCurrentExp] = useState(0);
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
@@ -34,10 +15,20 @@ function App() {
     });
   };
 
+  const getExpenses = (exp) => {
+    setCurrentExp((prev) => {
+      return (parseInt(prev) + parseInt(exp));
+    });
+  };
+
   return (
     <AppMain>
-      <NewExpense onAddExpense={addExpenseHandler} />
+      <NewExpense
+        onAddExpense={addExpenseHandler}
+        total={getExpenses}
+      />
       <Expenses items={expenses} />
+      <Footer displayExpenses={currentExp} />
     </AppMain>
   );
 }

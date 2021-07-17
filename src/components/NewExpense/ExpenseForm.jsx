@@ -7,6 +7,8 @@ const ExpenseForm = (props) => {
     const [enteredDate, setEnteredDate] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
 
+    const [sumofExpenses, setSumofExpenses] = useState(0);
+
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value);
     };
@@ -31,6 +33,10 @@ const ExpenseForm = (props) => {
 
         // making use of prop to send data from this component parent component.
         props.onSaveExpenseData(expenseData);
+
+        setSumofExpenses(parseFloat(expenseData.amount));
+        props.totalExpenes(parseFloat(expenseData.amount));
+
 
         setEnteredAmount('');
         setEnteredDate('');
@@ -61,7 +67,7 @@ const ExpenseForm = (props) => {
             </div>
 
             <div className="cost-input">
-                <label htmlFor="cost">Cost</label>
+                <label htmlFor="cost">Cost (₹)</label>
                 <input
                     type='number'
                     name="cost"

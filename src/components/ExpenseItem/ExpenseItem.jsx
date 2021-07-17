@@ -1,6 +1,11 @@
-import React from 'react'
-import Card from './Card';
-import { ExpenseDate, ExpenseDescription, ExpenseItemBar, ExpenseAmount } from './ExpenseItemStyles';
+import React from "react";
+import Card from "./Card";
+import {
+    ExpenseDate,
+    ExpenseDescription,
+    ExpenseItemBar,
+    ExpenseAmount,
+} from "./ExpenseItemStyles";
 
 const ExpenseItem = (props) => {
     return (
@@ -19,8 +24,7 @@ const ExpenseItem = (props) => {
                 </ExpenseAmount>
             </ExpenseItemBar>
         </Card>
+    );
+};
 
-    )
-}
-
-export default ExpenseItem
+export default ExpenseItem;

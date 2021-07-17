@@ -30,7 +30,7 @@ export const ExpenseAmount = styled.div `
 `
 
 export const CardDisplay = styled.div `
-    margin: 1.5rem 10rem;
+    margin: 0.5rem 10rem;
     box-shadow: 1rem solid white;
     border-radius: 2rem;
 `

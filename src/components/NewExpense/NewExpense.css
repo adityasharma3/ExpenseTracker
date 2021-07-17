@@ -8,6 +8,19 @@
   border-radius: 2rem;
 }
 
+.expense-form input {
+  font-size: large;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.25rem 1rem;
+}
+
+.expense-form label {
+  font-weight: 700;
+  
+}
+
 .date-input,
 .desc-input,
 .cost-input {
@@ -35,7 +48,7 @@ button,
 
 .no-expenses {
   background-color: black;
-  margin: 3rem 10vw;
+  margin: 1.5rem 10rem;
   border-radius: 2rem;
   height: 70vh;
   display: grid;
