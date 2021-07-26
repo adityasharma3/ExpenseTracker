@@ -7,12 +7,12 @@ An expense tracker made using React.
 ## Demo screen shots
 <fig>
     <figcaption>When no entry is made</figcaption>
-    <img src="./public/demo/ss1.PNG">
+    <img src="./public/demo/ss1.png">
 </fig>
 
 <fig>
     <figcaption>When entries are made</figcaption>
-    <img src="./public/demo/ss2.PNG">
+    <img src="./public/demo/ss2.png">
 </fig>
 
 
