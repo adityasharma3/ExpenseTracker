@@ -9,5 +9,5 @@ export const FooterStyling = styled.footer `
     bottom: 0vh;
     margin: 0 auto;
     background-color: black;
-
+    z-index: 1;
 `

@@ -13,6 +13,10 @@ export const ExpenseItemBar = styled.div`
     padding: 2rem;
     background-color: black;
     border-radius: 2rem;
+
+    @media only screen and (max-width:1200px) {
+        
+    }
 `
 
 export const ExpenseDate = styled.div `
@@ -33,4 +37,8 @@ export const CardDisplay = styled.div `
     margin: 0.5rem 10rem;
     box-shadow: 1rem solid white;
     border-radius: 2rem;
+
+    @media only screen and (max-width:1200px) {
+        margin: 0.35rem 1rem;
+    }
 `

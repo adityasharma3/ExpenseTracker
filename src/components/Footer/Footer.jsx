@@ -5,7 +5,7 @@ const Footer = (props) => {
     console.log(props);
     return (
         <FooterStyling>
-            <h1>Your expenses total upto </h1>
+            <h2>Your expenses total upto </h2>
             <h2>₹{props.displayExpenses}</h2>
             {/* console.log(props); */}
         </FooterStyling>

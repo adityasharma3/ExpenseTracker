@@ -3,6 +3,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 An expense tracker made using React.
+
+## Demo screen shots
+<fig>
+    <figcaption>When no entry is made</figcaption>
+    <img src="./public/demo/ss1.PNG">
+</fig>
+
+<fig>
+    <figcaption>When entries are made</figcaption>
+    <img src="./public/demo/ss2.PNG">
+</fig>
+
+
+### `git clone https://github.com/adityasharma3/ExpenseTracker.git`
 ## Available Scripts
 
 In the project directory, you can run:

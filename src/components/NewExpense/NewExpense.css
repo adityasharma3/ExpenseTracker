@@ -53,4 +53,22 @@ button,
   height: 70vh;
   display: grid;
   align-items: center;
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .no-expenses {
+    margin: 1.5rem 1rem;
+  }
+
+  .expense-form {
+    margin: 10px 1rem;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+  }
+
+  .expense-form input {
+    margin: 1rem 0;
+  }
 }
